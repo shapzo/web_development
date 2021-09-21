@@ -132,6 +132,18 @@
                     <p>Para comprar tu auto nuevo marca, para agendar una cita</p>
                     <p><span class="badge badge-info">numeo de tel: 01800594carrrovenas</span></p>
                   </div></center>
+
+                  <center>
+                  <div>
+                  <form class="form-horizontal" action="../Recibos/recibo11.php" method="post">
+                        <input type="submit" class="btn btn-danger" name="" value="Comprar">
+                    </form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <form class="form-horizontal" action="../compra_carro.html" method="post">
+                        <input type="submit" class="btn btn-primary" name="" value="Regresar">
+                    </form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+                  </center>
+                  
     <center>
       <div style="width:50%">
           <marquee onmouseover="stop()" onmouseout="start()" scrollamount="10" scrolldelay="100">

@@ -95,7 +95,7 @@
            die("Error kainal\r\n");
        }
        $laClientes = array();
-       $sqlClientes = "SELECT * FROM Clientes";
+       $sqlClientes = "SELECT * FROM Clientes ORDER BY Id DESC LIMIT 1";
        $resultadoClientes = mysqli_query($conexion, $sqlClientes);
        while ($Clientes = mysqli_fetch_array($resultadoClientes, MYSQLI_ASSOC)) {
            $laClientes[] = $Clientes;
@@ -106,13 +106,14 @@
       <div class="divs">
   
           <div align="left">
-              <img class="img-fluid rounded girls" loading="lazy" src="img/img_woman1.jpg" style="width: 90%;">
+              <img class="img-fluid rounded girls" loading="lazy" src="img/img_woman1.jpg" width="95%">
           </div>
   
           <div>
               <table class="table table-striped table-hover">
                   <thead id="thed">
                       <tr id="tr">
+                          <th id="th">Id</th>
                           <th id="th">Fecha</th>
                           <th id="th">Nombre</th>
                           <th id="th">E_mail</th>
@@ -123,6 +124,7 @@
                       <?php
                       foreach ($laClientes as $Clientes) {
                           echo "<tr>";
+                          echo "<td>" . $Clientes['Id'] . "</td>";
                           echo "<td>" . $Clientes['Fecha'] . "</td>";
                           echo "<td>" . $Clientes['Nombre'] . "</td>";
                           echo "<td>" . $Clientes['E_mail'] . "</td>";
@@ -135,7 +137,7 @@
 
           </div>
   
-          <div align="right"><img class="img-fluid rounded girls" loading="lazy" src="img/img_woman2.jpg" style="width: 60%;"></div>
+          <div align="right"><img class="img-fluid rounded girls" loading="lazy" src="img/img_woman2.jpg" width="90%"></div>
 
                     </div>
           <center><div style="width:50%">
@@ -156,3 +158,4 @@
     <script src="js/apps.js"></script>
   </body>
 </html>
+<!--BWrn@#<#_3ZSY4%#-->

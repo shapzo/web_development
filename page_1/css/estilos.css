@@ -16,7 +16,7 @@ body {
 }
 
 .dolar:hover {
-  filter: blur(5px);
+  filter: grayscale(5px);
   break-inside: avoid;
   page-break-inside: avoid;
 }
@@ -39,7 +39,7 @@ body {
   padding: 20px 30px;
   position: relative;
   z-index: 50;
-  opacity: 0.85;
+  opacity: 0.99;
 }
 
 .contenedor .header {
@@ -70,11 +70,6 @@ body {
 }
 
 /***********pagina de inicio y la pagina de compra******************/
-h1 {
-  padding: 25px;
-  text-align: center;
-}
-
 .imagenLateral {
   height: 200px;
   background: #fff;
@@ -95,7 +90,7 @@ h1 {
 h2 {
   font-size: 150%;
   color: rgb(75, 73, 72);
-  text-align: justify;
+  text-align: center;
 }
 
 p {
@@ -179,20 +174,20 @@ article {
 article img {
   width: 100%;
   overflow: hidden;
-  filter: blur(3px);
+  filter: grayscale(95%);
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
 article img:hover {
-  filter: blur(0px);
+  filter: grayscale(0%);
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
 
 article:hover {
   transition: 0.3s ease;
-  filter: blur(0px);
+  filter: grayscale(0%);
 }
 
 figure {
